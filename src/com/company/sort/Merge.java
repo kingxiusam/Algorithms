@@ -1,4 +1,4 @@
-package com.company;
+package com.company.sort;
 
 /**
  * Created by Administrator on 2017/8/29.

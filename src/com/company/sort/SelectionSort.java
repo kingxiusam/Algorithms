@@ -1,6 +1,4 @@
-package com.company;
-
-import static com.company.SortTemplate.*;
+package com.company.sort;
 
 /**
  * Created by Administrator on 2017/9/1.
@@ -17,9 +15,9 @@ public class SelectionSort {
             int min = i;
             for (int j=i+1;i<len;i++) {//从剩下的无序区找最小值与初始最小值比较
 
-                if (less(comparables[j],comparables[min])) min = j;
+                if (SortTemplate.less(comparables[j],comparables[min])) min = j;
 
-                exchange(comparables,j,min);//交换记录
+                SortTemplate.exchange(comparables,j,min);//交换记录
             }
 
         }
@@ -35,15 +33,15 @@ public class SelectionSort {
         //input();
 
         //将输入转化为数组
-        Comparable[] comparableList= (Comparable[]) input().toArray();
+        Comparable[] comparableList= (Comparable[]) SortTemplate.input().toArray();
 
         //对数组进行选择排序
         sort(comparableList);
 
         //判断是否排序
-        isSorted(comparableList);
+        SortTemplate.isSorted(comparableList);
 
-        show(comparableList);
+        SortTemplate.show(comparableList);
     }
 
 }
