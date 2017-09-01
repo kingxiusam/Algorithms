@@ -7,7 +7,7 @@ public class SelectionSort {
 
 
 
-    public static void sort(Comparable[]comparables){//comparables按升序排序
+    private static void sort(Comparable[]comparables){//comparables按升序排序
         int len =comparables.length;
         for (int i=0;i<len;i++){//进行len趟排序
 
